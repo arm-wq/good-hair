@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด — good hair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400&family=Noto+Sans+Thai:wght@300;400&family=Noto+Serif+Thai:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* จัดระยะปุ่มกรองใน #filter-bar และสถานะปุ่มที่ถูกเลือก (.is-active) */
+    #filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
+    }
+
+    #filter-bar .btn {
+      padding: 0.7rem 1.8rem;
+    }
+
+    #filter-bar .btn.is-active {
+      color: var(--color-cream);
+      background-color: var(--color-ink);
+      border-color: var(--color-ink);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">good hair</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+        <a href="order.html">สั่งซื้อ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Collection</span>
+          <h1>สินค้าทั้งหมด</h1>
+          <p>แชมพูขวดปั๊มสูตรอ่อนโยน ที่ออกแบบกลิ่นหอมมาเพื่อสะท้อนอารมณ์และบุคลิกของคุณในทุกวัน</p>
+          <hr class="divider">
+        </div>
+
+        <!-- script.js จะสร้างปุ่มกรองภายใน #filter-bar อัตโนมัติ -->
+        <div id="filter-bar" role="group" aria-label="กรองสินค้าตามกลิ่น"></div>
+
+        <!-- script.js จะดึงข้อมูลจาก products.json มาแสดงผลใน #product-list อัตโนมัติ -->
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">good hair</span>
+      <p>&copy; 2026 good hair. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

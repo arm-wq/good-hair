@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อ | good hair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400&family=Noto+Sans+Thai:wght@300;400&family=Noto+Serif+Thai:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">good hair</a>
+      <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container" style="max-width: 640px;">
+        <div class="section-header">
+          <span class="eyebrow">Order</span>
+          <h1 style="font-size: clamp(2rem, 4vw, 3rem);">สั่งซื้อสินค้า</h1>
+          <span class="divider"></span>
+          <p class="mt-4">กรอกข้อมูลด้านล่าง เราจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อของคุณ</p>
+        </div>
+
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" style="min-height: 80px;" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="text" id="total" name="total" inputmode="numeric" required>
+          </div>
+
+          <div class="form-group">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" placeholder="เช่น ที่อยู่จัดส่ง หรือคำขอเพิ่มเติม"></textarea>
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn btn--accent btn--block">ยืนยันสั่งซื้อ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">good hair</span>
+      <small>&copy; good hair. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

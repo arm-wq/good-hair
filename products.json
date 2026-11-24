@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sweet-100",
+    "name": "shampoo pump bottle Sweet เล็ก 100ml",
+    "mood": "sweet",
+    "type": "shampoo pump bottle",
+    "size": "100ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "ขวดปั๊มแชมพูกลิ่นหอมนุ่มนวลในมู้ด Sweet ขนาดเล็ก 100ml พกพาสะดวก เหมาะสำหรับเดินทางหรือทดลองใช้"
+  },
+  {
+    "id": "sweet-300",
+    "name": "shampoo pump bottle Sweet ใหญ่ 300ml",
+    "mood": "sweet",
+    "type": "shampoo pump bottle",
+    "size": "300ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "ขวดปั๊มแชมพูมู้ด Sweet ขนาดใหญ่ 300ml คุ้มค่าสำหรับใช้ประจำวัน ให้ความรู้สึกอ่อนโยนและผ่อนคลายทุกครั้งที่สระ"
+  },
+  {
+    "id": "confident-100",
+    "name": "shampoo pump bottle Confident เล็ก 100ml",
+    "mood": "confident",
+    "type": "shampoo pump bottle",
+    "size": "100ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "ขวดปั๊มแชมพูมู้ด Confident ขนาดเล็ก 100ml กลิ่นหนักแน่นมีมิติ พกพาง่าย เหมาะสำหรับคนที่อยากเริ่มต้นวันอย่างมั่นใจ"
+  },
+  {
+    "id": "confident-300",
+    "name": "shampoo pump bottle Confident ใหญ่ 300ml",
+    "mood": "confident",
+    "type": "shampoo pump bottle",
+    "size": "300ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "ขวดปั๊มแชมพูมู้ด Confident ขนาดใหญ่ 300ml คุ้มค่าสำหรับใช้ประจำวัน ให้ความรู้สึกมั่นใจและสง่างามในทุกวัน"
+  }
+]
